@@ -54,14 +54,6 @@ public class TestSuite extends BaseTest {
         //fill  friend email detail
         productEmailAFriendPage.fillInEmailAFriendDetailsForRegisteredUser();
 
-
-
-
-
-
-
-
-
     }
     @Test
     public void verifyRegisteredUsersShouldAbleToVoteSuccessfully(){

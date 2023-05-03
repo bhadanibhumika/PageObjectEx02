@@ -78,13 +78,8 @@ public class HomePage extends Utils {
        //click on first product
         clickOnElement(_firstProduct);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
-
-        //close pop up window
-//        clickOnElement(_close);
         //click on second product
         clickOnElement(_secondProduct);
-        //wait until  green pop up window is gone
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
         //click green pop up window
         clickOnElement(_greenPopupWindow);
 
