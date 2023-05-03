@@ -8,7 +8,6 @@ public class RegisterResultPage extends Utils{
      private By _actualMassage = By.xpath("//div[@class='result']");
 
     public void verifyToUserShouldRegisterSuccessfully() {
-
         // get the massage
         String actualMassage = getTextFromElement(_actualMassage);
         // print for massage

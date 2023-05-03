@@ -12,6 +12,7 @@ public class ShoppingCartPage extends  Utils{
         //get name of product Leica T Mirrorless Digital Camera
         String actualProductName = getTextFromElement(_clockOnProduct);
         System.out.println("Product Name is "+actualProductName);
+        //for compare actual and expected result
         Assert.assertEquals(actualProductName,expectedMassage,"Your Product Name is not match");
 
 

@@ -10,8 +10,10 @@ public class CompareProductPage extends Utils{
     private  By _clearList = By.xpath("//a[text()='Clear list']");
     private  By _getMassage = By.xpath("//div[text()='You have no items to compare.']");
     public void twoProductsName(){
+        //get Frist product
         String productName = getTextFromElement(_firstProductName);
         System.out.println("Frist product name is "+productName);
+        //get Second product
         String productname = getTextFromElement(_secondProductName);
         System.out.println("Second product name is "+productname);
         // click on clear list

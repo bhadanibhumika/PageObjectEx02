@@ -73,24 +73,18 @@ public class HomePage extends Utils {
         clickOnElement(_electronicsLink);
     }
     public void varifyCompareTwoProducts() {
-        //Click on First product Htc 18
+       //click on first product
         clickOnElement(_firstProduct);
-
-        //close popup  green window
+        //close pop up window
         clickOnElement(_close);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        //wait until  green pop up window is gone
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
-
-
-        //Click on virtual Card
+        //click on second product
         clickOnElement(_secondProduct);
-
         //wait until  green pop up window is gone
-
-        //Click on popup window green notification
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
+        //click green pop up window
         clickOnElement(_greenPopupWindow);
+
     }
 
 }
