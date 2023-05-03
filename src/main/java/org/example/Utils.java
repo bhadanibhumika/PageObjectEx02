@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import java.sql.Timestamp;
 
 public class Utils extends BasePage{
-    public static void clickElement(By by) {
+    public static void clickOnElement(By by) {
          driver.findElement(by).click();
     }
 

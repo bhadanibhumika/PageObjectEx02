@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class RegisterResultPage extends Utils{
     static String expectedRegistrationCompleteMsg = "Registration is not working.";
-    By _actualMassage = By.xpath("//div[@class='result']");
+     private By _actualMassage = By.xpath("//div[@class='result']");
 
     public void verifyToUserShouldRegisterSuccessfully() {
 

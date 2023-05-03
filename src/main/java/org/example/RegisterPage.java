@@ -14,13 +14,13 @@ public class RegisterPage  extends Utils{
         //type last name
         typeText(_lastName, "patel");
         //type email
-        typeText(_email, "shama12@gmail.com");
+        typeText(_email, "shama112@gmail.com");
         //type password
         typeText(_password, "Test1234");
         //type  conform password
         typeText(_conformPassword, "Test1234");
         //click on register button
-        clickElement(_clickRegisterButton);
+        clickOnElement(_clickRegisterButton);
 
     }
 

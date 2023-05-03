@@ -4,8 +4,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class DriverManager extends Utils{
-    public  void openBrowser(){
+public class DriverManager extends Utils {
+    public void openBrowser() {
         //open the browser
         driver = new ChromeDriver();
         //type url
@@ -15,9 +15,10 @@ public class DriverManager extends Utils{
         //for window maximize
         driver.manage().window().maximize();
     }
-    public  void closeBrowser(){
+
+    public void closeBrowser() {
         //close browser
-        driver.close();}
+         driver.close();}
 
 
-}
+    }
