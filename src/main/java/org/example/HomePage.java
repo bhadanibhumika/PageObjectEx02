@@ -73,15 +73,18 @@ public class HomePage extends Utils {
         clickOnElement(_electronicsLink);
     }
     public void varifyCompareTwoProducts() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
        //click on first product
         clickOnElement(_firstProduct);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
+
         //close pop up window
-        clickOnElement(_close);
+//        clickOnElement(_close);
         //click on second product
         clickOnElement(_secondProduct);
         //wait until  green pop up window is gone
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
+//        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
         //click green pop up window
         clickOnElement(_greenPopupWindow);
 
