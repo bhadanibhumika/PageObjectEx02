@@ -2,8 +2,6 @@ package org.example;
 
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
 public class TestSuite extends BaseTest {
     // create object by access modifiers
     HomePage homePage = new HomePage();
@@ -70,7 +68,7 @@ public class TestSuite extends BaseTest {
         //click on vote
         homePage.clickOnVote();
         //get result for vote
-        homePage.verifyUsershouldBeAbleTovoteSuccessfully();
+        homePage.verifyUserShouldBeAbleToVoteSuccessfully();
 
     }
     @Test
@@ -87,7 +85,7 @@ public class TestSuite extends BaseTest {
     @Test
     public void verifyUserShouldBeAbleToSeeProductInShoppingCartSuccessfully(){
         //click on electronics link
-        homePage.clickOnElecronics();
+        homePage.clickOnElectronics();
 
         //click on camera & photo
         electronicsPage.clickOnCamaraAndPhotos();
@@ -106,7 +104,7 @@ public class TestSuite extends BaseTest {
     @Test
     public  void verifyUserShouldBeAbleToCompareTwoProductSuccessfully(){
         //Click on First product Htc 18
-        homePage.varifyCompareTwoProducts();
+        homePage.verifyCompareTwoProducts();
         //compare two product in cart
         compareProductPage.twoProductsName();
 
