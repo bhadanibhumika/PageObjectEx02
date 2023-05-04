@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 
 public class HomePage extends Utils {
@@ -56,7 +55,7 @@ public class HomePage extends Utils {
         clickOnElement(_digitalDownloads);
 
     }
-    public void verifyUsershouldBeAbleTovoteSuccessfully(){
+    public void verifyUserShouldBeAbleToVoteSuccessfully(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='pollanswers-2']")));
         String actualMassage =getTextFromElement(_voteResult);
@@ -68,16 +67,16 @@ public class HomePage extends Utils {
         clickOnElement(_addToCartButton);
 
     }
-    public void clickOnElecronics(){
+    public void clickOnElectronics(){
         //click on Electronics link
         clickOnElement(_electronicsLink);
     }
-    public void varifyCompareTwoProducts() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    public void verifyCompareTwoProducts() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
        //click on first product
         clickOnElement(_firstProduct);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id=\"bar-notification\"]/div/p/a")));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='bar-notification success']")));
         //click on second product
         clickOnElement(_secondProduct);
         //click green pop up window
