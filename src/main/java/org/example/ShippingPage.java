@@ -17,7 +17,8 @@ public class ShippingPage extends Utils{
     private  By _cardCode = By.cssSelector("input#CardCode");
     private By _continue2 = By.xpath("//button[@class='button-1 payment-info-next-step-button']");
     private By _confirm = By.xpath("//button[text()='Confirm']");
-    private By _orderSuccessfullyMessage = By.xpath("//div[@class='section order-completed']");
+    private By _orderSuccessfullyMessage = By.xpath("//div[@class='section order-completed']//div[@class='title']");
+    private By _orderNo = By.cssSelector("div.order-number");
 
 
     public void fillShippinDetails(){
@@ -50,9 +51,14 @@ public class ShippingPage extends Utils{
     public void confirmOrder(){
         //click on confirm button
         clickOnElement(_confirm);
+
         //verify and assert order is successful message
         String orderSuccessfullyMessage = getTextFromElement(_orderSuccessfullyMessage);
         System.out.println("Order Details: " +orderSuccessfullyMessage);
+        //order number
+        String orderNo = getTextFromElement(_orderNo);
+        System.out.println(orderNo);
+
         Assert.assertEquals(orderSuccessfullyMessage,expectedOrderConfirmationMessage,"Order is not processed");
     }
 }
