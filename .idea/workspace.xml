@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e0b0ef-7569-4e2d-9451-34e6e6299f34" name="Changes" comment="file add">
+    <list default="true" id="00e0b0ef-7569-4e2d-9451-34e6e6299f34" name="Changes" comment="new file add">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CheckoutBillingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CheckoutBillingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c0dfb2ae-52a4-4686-8823-c58e7965bd05" />
+        <option name="url" value="git@github.com:bhadanibhumika/PageObjectEx02.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,16 +56,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/DELL/IdeaProjects/PageObjectEx02",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/IdeaProjects/PageObjectEx02&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.TestSuite.verifyUserShouldBeAbleToCompareTwoProductSuccessfully">
+}</component>
+  <component name="RunManager" selected="TestNG.TestSuite">
+    <configuration name="TestSuite" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObjectEx02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite.verifyGuestUsersShouldBeAbleToCheckoutSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObjectEx02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
+      <option name="METHOD_NAME" value="verifyGuestUsersShouldBeAbleToCheckoutSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSuite.verifyNonRegisteredShouldNotAbleToEmailAFriend" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
@@ -68,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyRegisteredUserShouldAbleToReferAProductToAFriendSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyUserShouldBeAbleToSelectAndPrintAccordingly" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyRegisteredUserShouldAbleToReferAProductToAFriendSuccessfully" />
+      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSelectAndPrintAccordingly" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -86,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyRegisteredUsersShouldAbleToVoteSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -96,43 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyRegisteredUsersShouldAbleToVoteSuccessfully" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToCompareTwoProductSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageObjectEx02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToCompareTwoProductSuccessfully" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToSeeProductInShoppingCartSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageObjectEx02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSeeProductInShoppingCartSuccessfully" />
+      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToCompareTwoProductSuccessfully" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSeeProductInShoppingCartSuccessfully" />
+        <item itemvalue="TestNG.TestSuite" />
+        <item itemvalue="TestNG.TestSuite.verifyGuestUsersShouldBeAbleToCheckoutSuccessfully" />
         <item itemvalue="TestNG.TestSuite.verifyNonRegisteredShouldNotAbleToEmailAFriend" />
-        <item itemvalue="TestNG.TestSuite.verifyRegisteredUsersShouldAbleToVoteSuccessfully" />
-        <item itemvalue="TestNG.TestSuite.verifyRegisteredUserShouldAbleToReferAProductToAFriendSuccessfully" />
+        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSelectAndPrintAccordingly" />
+        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
       </list>
     </recent_temporary>
   </component>
@@ -173,8 +188,61 @@
       <option name="project" value="LOCAL" />
       <updated>1683114169454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="last file">
+      <created>1683156176238</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683156176238</updated>
+    </task>
+    <task id="LOCAL-00004" summary="last file">
+      <created>1683156193557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683156193557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="last file">
+      <created>1683157140872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683157140872</updated>
+    </task>
+    <task id="LOCAL-00006" summary="last file">
+      <created>1683218920005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683218920005</updated>
+    </task>
+    <task id="LOCAL-00007" summary="last file">
+      <created>1683218992092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683218992092</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new file add">
+      <created>1683652044943</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683652044943</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -182,6 +250,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="file add" />
-    <option name="LAST_COMMIT_MESSAGE" value="file add" />
+    <MESSAGE value="last file" />
+    <MESSAGE value="new file add" />
+    <option name="LAST_COMMIT_MESSAGE" value="new file add" />
   </component>
 </project>

@@ -16,6 +16,7 @@ public class CheckoutBillingPage extends Utils{
 
 
     public  void fillInBillingDetail(){
+        //enter first name
         typeText(_FirsttName,"rahi");
         typeText(_lastName,"patel");
         typeText(_email,"rapatel@gmail.com");
