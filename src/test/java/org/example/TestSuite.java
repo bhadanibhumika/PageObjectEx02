@@ -15,9 +15,15 @@ public class TestSuite extends BaseTest {
     CameraAndPhotosPage cameraAndPhotosPage = new CameraAndPhotosPage();
     ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
     CompareProductPage compareProductPage = new CompareProductPage();
+    ProductPage productPage = new ProductPage();
+    FaceBookPage faceBookPage = new FaceBookPage();
+    CheckingOutAsGuestPage checkingOutAsGuestPage = new CheckingOutAsGuestPage();
+    CheckoutBillingPage checkoutBillingPage = new CheckoutBillingPage();
+    ShippingPage shippingPage = new ShippingPage();
+    NopComNewRealesePage nopComNewRealesePage = new NopComNewRealesePage();
 
     @Test
-    public  void verifyToUserShouldBeAbleToRegisterSuccessfully() {
+      public  void verifyToUserShouldBeAbleToRegisterSuccessfully() {
         //click on register button
         homePage.clickOnRegisterButton();
         //fill all details
@@ -110,5 +116,55 @@ public class TestSuite extends BaseTest {
 
 
     }
+    @Test
+    public void verifyToPrintOutProductName(){
+        homePage.printOutTheProductName();
+    }
+    @Test
+    public void verifyTheSearchAlertMessage(){
+        homePage.searchAlertMassage();
+    }
+    @Test
+    public void verifyUserShouldBeAbleToSelectAndPrintAccordingly(){
+        homePage.printCurrencyInUsDollar();
+        homePage.printCurrencyInEuro();
+    }
+    @Test
+    public void verifySearchFunctionIsWorkingFine(){
+        homePage.searchProductsFunction();
+        productPage.PrintProductName();
 
+    }
+    @Test
+    public void verifyNopCommerceNewReleaseLatestCommentShouldBeAppearLast(){
+        homePage.clickOnNewReleaseDetails();
+        nopComNewRealesePage.fillInNewReleaseDetails();
+
+
+    }
+    @Test
+    public void verifyGuestUsersShouldBeAbleToCheckoutSuccessfully(){
+        homePage.clickOnOwnComputer();
+        productPage.buildYourOwnComputerProduct();
+        shoppingCartPage.verifyBuildYourOwnComputerShoppingCart();
+        checkingOutAsGuestPage.verifyCheckOutAsAGuest();
+        checkoutBillingPage.fillInBillingDetail();
+        shippingPage.fillShippinDetails();
+        shippingPage.paymentInfo();
+        shippingPage.confirmOrder();
+
+    }
+    @Test
+    public void verifyUserShouldBeAbleToSwitchToFacebookWindowTab(){
+        homePage.clickOnFacebookIcon();
+        faceBookPage.verifyFacebookpage();
+        homePage.verifyWelcomeMessage();
+
+    }
+    @Test
+    public void verifyAlertMessageWhenUserClickOnVoteWithoutSelectingAnyOption(){
+        homePage.verifyVoteAlertMessage();
+
+
+    }
 }
