@@ -117,7 +117,7 @@ public class TestSuite extends BaseTest {
 
     }
     @Test
-    public void verifyToPrintOutProductName(){
+    public void verifyToPrintOutHomePageProductsName(){
         homePage.printOutTheProductName();
     }
     @Test
@@ -131,8 +131,9 @@ public class TestSuite extends BaseTest {
     }
     @Test
     public void verifySearchFunctionIsWorkingFine(){
-        homePage.searchProductsFunction();
-        productPage.PrintProductName();
+        //type product name in search placeholder
+        homePage.searchProductsFunction("Nike","Apple");
+
 
     }
     @Test

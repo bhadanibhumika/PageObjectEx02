@@ -17,6 +17,8 @@ public class DriverManager extends Utils {
     }
 
     public void closeBrowser() {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
         //close browser
          driver.close();
     }

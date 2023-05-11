@@ -17,7 +17,7 @@ public class HomePage extends Utils {
     static String expectedAlertMassage = "Please enter any search keyword";
     String expectedWelcomeMessage = "No Message";
   private   By _registerButton = By.className("ico-register");
-  private By _goodRadioButton = By.id("pollanswers-2");;
+  private By _goodRadioButton = By.cssSelector("input#pollanswers-2");
   private By _voteButton = By.xpath("//button[text()='Vote']");
   private By _verifyErrorVoteMassage = By.xpath("//div[@class='poll-vote-error']");
   private By _loginButton = By.xpath("//a[text()='Log in' ]");
@@ -108,10 +108,6 @@ public class HomePage extends Utils {
            System.out.println(e.getText());}}
     public void searchAlertMassage(){
         clickOnElement(_searchButton);
-       // String actualMassage = driver.switchTo().alert().getText();
-       // Assert.assertEquals(actualMassage,expectedAlertMassage,"Please enter any search keyword");
-       // driver.switchTo().alert().accept();
-
         //create alert object
         Alert alert = driver.switchTo().alert();
         Assert.assertEquals(alert.getText(),expectedAlertMassage,"Please enter any search keyword");
@@ -154,11 +150,19 @@ public class HomePage extends Utils {
         //click on ok button
         alert.accept();
     }
-    public void searchProductsFunction(){
+    public void searchProductsFunction(String searchText,String expectedResult){
         //type in placeholder
-       typeText(_searchPlaceHolderText,"Nike");
+       typeText(_searchPlaceHolderText,searchText);
        //click on search button
        clickOnElement(_searchButton);
+
+        List<WebElement> product_List = driver.findElements(By.cssSelector("div.product-grid h2"));
+        for (WebElement e :product_List) {
+           System.out.println(e.getText());
+        }
+        String actualMessage = searchText;
+        Assert.assertEquals(actualMessage,expectedResult);
+
 
     }
     public void clickOnFacebookIcon(){

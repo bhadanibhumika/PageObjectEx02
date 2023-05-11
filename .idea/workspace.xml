@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="00e0b0ef-7569-4e2d-9451-34e6e6299f34" name="Changes" comment="new file add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ShippingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TestSuite.verifyGuestUsersShouldBeAbleToCheckoutSuccessfully">
+  <component name="RunManager" selected="TestNG.TestSuite">
     <configuration name="TestSuite" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
@@ -99,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyNonRegisteredShouldNotAbleToEmailAFriend" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyRegisteredUsersShouldAbleToVoteSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyNonRegisteredShouldNotAbleToEmailAFriend" />
+      <option name="METHOD_NAME" value="verifyRegisteredUsersShouldAbleToVoteSuccessfully" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToSelectAndPrintAccordingly" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifySearchFunctionIsWorkingFine" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSelectAndPrintAccordingly" />
+      <option name="METHOD_NAME" value="verifySearchFunctionIsWorkingFine" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyTheSearchAlertMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
+      <option name="METHOD_NAME" value="verifyTheSearchAlertMessage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestSuite.verifyGuestUsersShouldBeAbleToCheckoutSuccessfully" />
         <item itemvalue="TestNG.TestSuite" />
-        <item itemvalue="TestNG.TestSuite.verifyNonRegisteredShouldNotAbleToEmailAFriend" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSelectAndPrintAccordingly" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
+        <item itemvalue="TestNG.TestSuite.verifyGuestUsersShouldBeAbleToCheckoutSuccessfully" />
+        <item itemvalue="TestNG.TestSuite.verifySearchFunctionIsWorkingFine" />
+        <item itemvalue="TestNG.TestSuite.verifyTheSearchAlertMessage" />
+        <item itemvalue="TestNG.TestSuite.verifyRegisteredUsersShouldAbleToVoteSuccessfully" />
       </list>
     </recent_temporary>
   </component>
